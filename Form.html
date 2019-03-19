@@ -8,12 +8,14 @@
     <h1>Register</h1>
 
     <form class="register" action="" method="post">
-      <div class="register">
+      <!-- request first name and last name -->
+      <div class="name">
         <label for="first-name">First Name:</label>
           <input type="text" name="first-name" id="first-name" placeholder="John" required>
         <label for="last-name">Last Name:</label>
           <input type="text" name="last-name" id="last-name" placeholder="Smith" required>
       </div>
+      <!-- request gender, validate single-choice -->
       <div class="gender-choice">
         <label for="-1">Male</label>
           <input type="radio" name="gender-choice" id="gender-choice-1" value="gender-choice-1">
@@ -22,12 +24,14 @@
         <label for="gender-choice-3">Other</label>
           <input type="radio" name="gender-choice" id="gender-choice-3" value="gender-choice-3">
       </div>
+      <!-- request email and validate -->
       <div class="email">
         <label for="email">Email:</label>
           <input type="email" name="email" id="email" placeholder="your email" required>
         <label for="password">Password:</label>
           <input type="password" name="password" id="password" pattern=".{5,10}" placeholder="your password" required title="5 to 10 characters">
       </div>
+      <!-- request birthday and put 3 options each as for demo-->
       <div class="birthday-choice">
         <label for="birthday-choice">Birthday:</label>
           <select name="birthday-choice" id="birthday-choice">
@@ -49,17 +53,20 @@
             <option value="Year">1992</option>
           </select>
       </div>
+      <!-- request acknowlegement checkbox -->
       <div class="acknowledgement">
         <label for="acknowlegement">
           I agree to the trems and conditions
           <input type="checkbox" name="acknowlegement" id="acknowlegement">
         </label>
       </div>
+      <!-- request submit button -->
       <div class="submit">
         <label for="submit">
           <input type="submit" value="submit">
         </label>
       </div>
+
     </form>
   </body>
 </html>
