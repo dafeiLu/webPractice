@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Register</title>
+  </head>
+  <body>
+    <h1>Register</h1>
+
+    <form class="register" action="" method="post">
+      <div class="register">
+        <label for="first-name">First Name:</label>
+          <input type="text" name="first-name" id="first-name" placeholder="John" required>
+        <label for="last-name">Last Name:</label>
+          <input type="text" name="last-name" id="last-name" placeholder="Smith" required>
+      </div>
+      <div class="gender-choice">
+        <label for="-1">Male</label>
+          <input type="radio" name="gender-choice" id="gender-choice-1" value="gender-choice-1">
+        <label for="gender-choice-2">Female</label>
+          <input type="radio" name="gender-choice" id="gender-choice-2" value="gender-choice-2">
+        <label for="gender-choice-3">Other</label>
+          <input type="radio" name="gender-choice" id="gender-choice-3" value="gender-choice-3">
+      </div>
+      <div class="email">
+        <label for="email">Email:</label>
+          <input type="email" name="email" id="email" placeholder="your email" required>
+        <label for="password">Password:</label>
+          <input type="password" name="password" id="password" pattern=".{5,10}" placeholder="your password" required title="5 to 10 characters">
+      </div>
+      <div class="birthday-choice">
+        <label for="birthday-choice">Birthday:</label>
+          <select name="birthday-choice" id="birthday-choice">
+            <option value="0" selected disabled>Month</option>
+            <option value="Jan">January</option>
+            <option value="birthday-choice">February</option>
+            <option value="birthday-choice">March</option>
+          </select>
+          <select name="birthday-day" id="birthday-day">
+            <option value="0" selected disabled>Day</option>
+            <option value="Day">01</option>
+            <option value="Day">02</option>
+            <option value="Day">03</option>
+          </select>
+          <select name="birthday-year" id="birthday-year">
+            <option value="0"selected disabled>Year</option>
+            <option value="Year">1990</option>
+            <option value="Year">1991</option>
+            <option value="Year">1992</option>
+          </select>
+      </div>
+      <div class="acknowledgement">
+        <label for="acknowlegement">
+          I agree to the trems and conditions
+          <input type="checkbox" name="acknowlegement" id="acknowlegement">
+        </label>
+      </div>
+      <div class="submit">
+        <label for="submit">
+          <input type="submit" value="submit">
+        </label>
+      </div>
+    </form>
+  </body>
+</html>
