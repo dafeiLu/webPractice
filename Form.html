@@ -15,6 +15,7 @@
         <label for="last-name">Last Name:</label>
           <input type="text" name="last-name" id="last-name" placeholder="Smith" required>
       </div>
+
       <!-- request gender, validate single-choice -->
       <div class="gender-choice">
         <label for="gender-choice-1">Male</label>
@@ -24,35 +25,49 @@
         <label for="gender-choice-3">Other</label>
           <input type="radio" name="gender-choice" id="gender-choice-3" value="gender-choice-3">
       </div>
+
       <!-- request email and validate -->
       <div class="email">
-        <label for="email">Email:</label>
+        <label for="email">
+          Email:
           <input type="email" name="email" id="email" placeholder="your email" required>
-        <label for="password">Password:</label>
+        </label>
+
+        <label for="password">
+          Password:
           <input type="password" name="password" id="password" pattern=".{5,10}" placeholder="your password" required title="5 to 10 characters">
+        </label>
+
       </div>
+
       <!-- request birthday and put 3 options each as for demo-->
       <div class="birthday-choice">
-        <label for="birthday-choice">Birthday:</label>
-          <select name="birthday-choice" id="birthday-choice">
+        <label for="birthday-choice">
+          Birthday:
+          <select name="month" id="birthday-choice">
             <option value="0" selected disabled>Month</option>
             <option value="Jan">January</option>
-            <option value="birthday-choice">February</option>
-            <option value="birthday-choice">March</option>
-          </select>
-          <select name="birthday-day" id="birthday-day">
+            <option value="Feb">February</option>
+            <option value="Mar">March</option>
+          </select
+
+          <select month="day" id="birthday-day">
             <option value="0" selected disabled>Day</option>
             <option value="Day">01</option>
             <option value="Day">02</option>
             <option value="Day">03</option>
           </select>
-          <select name="birthday-year" id="birthday-year">
+
+          <select month="year" id="birthday-year">
             <option value="0"selected disabled>Year</option>
             <option value="Year">1990</option>
             <option value="Year">1991</option>
             <option value="Year">1992</option>
           </select>
+        </label>
+
       </div>
+
       <!-- request acknowlegement checkbox -->
       <div class="acknowledgement">
         <label for="acknowlegement">
@@ -60,10 +75,11 @@
           <input type="checkbox" name="acknowlegement" id="acknowlegement">
         </label>
       </div>
+
       <!-- request submit button -->
       <div class="submit">
         <label for="submit">
-          <input type="submit" value="submit">
+          <input type="submit" id="submit" value="submit">
         </label>
       </div>
 
